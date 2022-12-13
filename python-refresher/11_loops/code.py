@@ -14,3 +14,14 @@
 #         print("You were off by one.")
 #     else:
 #         print("Sorry, it's wrong!")
+
+friends = ["Rolf", "Jen", "Bob", "Anne"]
+
+for friend in friends:
+    print(f"{friend} is my friend.")
+
+grades = [35, 67, 98, 100, 100]
+total = sum(grades)
+amount = len(grades)
+
+print(total / amount)
