@@ -12,12 +12,15 @@ print(username_mapping)
 
 print(username_mapping["Bob"])  # (0, "Bob", "password")
 
-# -- Can be useful to log in for example --
+# # -- Can be useful to log in for example --
 
 username_input = input("Enter your username: ")
 password_input = input("Enter your password: ")
 
 _, username, password = username_mapping[username_input]
+
+# print(username)
+# print(password)
 
 if password_input == password:
     print("Your details are correct!")

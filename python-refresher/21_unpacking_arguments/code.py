@@ -3,6 +3,8 @@ def multiply(*args):
     total = 1
     for arg in args:
         total = total * arg
+        # print(arg)
+        # print(total)
 
     return total
 
@@ -10,8 +12,8 @@ def multiply(*args):
 print(multiply(3, 5))
 print(multiply(-1))
 
-# The asterisk takes all the arguments and packs them into a tuple.
-# The asterisk can be used to unpack sequences into arguments too!
+The asterisk takes all the arguments and packs them into a tuple.
+The asterisk can be used to unpack sequences into arguments too!
 
 
 def add(x, y):
@@ -54,4 +56,4 @@ def apply(*args, operator):
 
 
 print(apply(1, 3, 6, 7, operator="+"))
-print(apply(1, 3, 5, "+"))  # Error
+# print(apply(1, 3, 5, "+"))  # Error

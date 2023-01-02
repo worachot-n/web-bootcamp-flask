@@ -9,10 +9,12 @@ class Device:
 
     def disconnect(self):
         self.connected = False
+        print("Disconnected.")
 
 
 # printer = Device("Printer", "USB")
 # print(printer)
+# printer.disconnect()
 
 # We don't want to add printer-specific stuff to Device, so...
 
@@ -29,7 +31,8 @@ class Printer(Device):
 
     def print(self, pages):
         if not self.connected:
-            raise TypeError("Device is disconnected at this time, cannot print.")
+            raise TypeError(
+                "Device is disconnected at this time, cannot print.")
         print(f"Printing {pages} pages.")
         self.remaining_pages -= pages
 
@@ -40,4 +43,4 @@ print(printer)
 printer.print(50)
 print(printer)
 printer.disconnect()
-printer.print(30)  # Error
+# printer.print(30)  # Error
