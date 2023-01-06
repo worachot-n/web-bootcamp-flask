@@ -1,0 +1,11 @@
+.container {
+    color: orangered;
+}
+
+p {
+    color: orangered;
+}
+
+a {
+    color: inherit;
+}
