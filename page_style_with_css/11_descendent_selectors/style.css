@@ -1,0 +1,18 @@
+ul li a{
+    color: red;
+}
+
+dl dt {
+    font-weight: 700;
+}
+
+label ~ input {
+    padding: 5px 10px;
+    border: 3px solid;
+}
+
+
+label + input {
+    padding: 5px 10px;
+    border: 5px solid red;
+}
